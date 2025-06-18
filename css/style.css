@@ -651,7 +651,7 @@ h4 + p {
 
 @media (max-width: 768px) {
   .scroll-track {
-    animation: scroll-left 8s linear infinite;
+    animation: scroll-left 20s linear infinite;
   }
 }
 
