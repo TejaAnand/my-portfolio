@@ -639,12 +639,27 @@ h4 + p {
 .scroll-wrapper {
   overflow: hidden;
   position: relative;
+  Width: 100%;
 }
 
 .scroll-track {
   display: flex;
   gap: 25px;
-  animation: scroll-left 25s linear infinite;
+  animation: scroll-left 20s linear infinite;
+  Width: max-content;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 25px;
+  animation: scroll-left 15s linear infinite;
+  width: max-content;
+}
+
+@media (max-width: 768px) {
+  .scroll-track {
+    animation: scroll-left 8s linear infinite;
+  }
 }
 
 .scroll-track img {
@@ -652,14 +667,14 @@ h4 + p {
   width: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  Flex-shrink: 0;
 }
 
 /* Scroll Animation */
 @keyframes scroll-left {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(-50%); }
 }
-
 /* FOOTER STYLING */
 footer {
   width: 100%;
