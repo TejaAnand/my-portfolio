@@ -649,13 +649,6 @@ h4 + p {
   Width: max-content;
 }
 
-.scroll-track {
-  display: flex;
-  gap: 25px;
-  animation: scroll-left 15s linear infinite;
-  width: max-content;
-}
-
 @media (max-width: 768px) {
   .scroll-track {
     animation: scroll-left 8s linear infinite;
